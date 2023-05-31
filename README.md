@@ -1,1 +1,2 @@
-# Jobtracker - keep track of your jobs applications
+# Jobtracker
+## Keep track of your jobs applications
