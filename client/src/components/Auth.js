@@ -2,37 +2,32 @@ import React from "react"
 
 function Auth(props) {
   return (
-    <div className="flex h-screen justify-center items-center bg-green-400">
-      
-      <form className="text-center w-80 bg-white/20 p-8 rounded-lg shadow-xl backdrop-blur-sm border border-white">
-        <div className="block">
-          <h3 className="font-bold text-green-700 text-2xl mb-6">Jobtracker</h3>
-          <h3 className="font-bold text-black">Sign In </h3>
-          <a href="/signup" className="font-bold text-black hover:text-green-700">Create an account</a>
-          <div className="form-group mt-3">
-            <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
-              Email address
-            </label>
-            <input
-              type="email"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              placeholder="Enter email"
-            />
-          </div>
-          <div className="form-group mt-3">
-            <label label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
-              Password
-            </label>
-            <input
-              type="password"
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              placeholder="Enter password"
-            />
-          </div>
-          <div className="d-grid gap-2 mt-3">
-            <button type="submit" class="px-4 py-1 text-sm text-green-600 font-semibold rounded-full border border-green-600 hover:text-white hover:bg-green-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">
-              Sign in
-            </button>
+    <div class="flex min-h-screen items-center justify-center bg-gray-100 dark:bg-gray-950 p-12">
+      <form action="">
+        <div class="max-w-sm rounded-3xl bg-gradient-to-b from-sky-300 to-purple-500 p-px dark:from-gray-800 dark:to-transparent">
+          <div class="rounded-[calc(1.5rem-1px)] bg-white px-10 p-12 dark:bg-gray-900">
+            <div>
+              <h1 class="text-xl font-semibold text-gray-800 dark:text-white">
+                Sign in to your account
+              </h1>
+              <p class="text-sm tracking-wide text-gray-600 dark:text-gray-300">
+                Don't have an account ? 
+              <a href="/signup" class="text-blue-600 transition duration-200 hover:underline dark:text-blue-400">
+                Signup
+              </a> for free</p>
+            </div>
+
+            <form class="mt-8 space-y-8">
+              <div class="space-y-6">
+                <input class="w-full bg-transparent text-gray-600 dark:text-white dark:border-gray-700 rounded-md border border-gray-300 px-3 py-2 text-sm placeholder-gray-600 invalid:border-red-500 dark:placeholder-gray-300" placeholder="Your Email" type="email" name="email" id="email" />
+
+                <input class="w-full bg-transparent text-gray-600 dark:text-white dark:border-gray-700 rounded-md border border-gray-300 px-3 py-2 text-sm placeholder-gray-600 invalid:border-red-500 dark:placeholder-gray-300" placeholder="Your Password" type="password" name="password" id="password" />
+              </div>
+
+              <button class="h-9 px-3 w-full bg-blue-600 hover:bg-blue-700 active:bg-blue-800 focus:bg-blue-700 transition duration-500 rounded-md text-white">
+                Signin
+              </button>
+            </form>
           </div>
         </div>
       </form>
