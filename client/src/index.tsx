@@ -1,3 +1,4 @@
+import React from 'react';
 import {
   Route,
   RouterProvider,
@@ -7,7 +8,7 @@ import {
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import Home from './components/Accueil/Home';
-import LoginForm from './components/Auth/Signin';
+import LoginForm from './components/LoginForm/LoginForm';
 import Signup from './components/Auth/Signup';
 import Signin from './components/Auth/Signin';
 import Applications from './components/Applications/Applications';

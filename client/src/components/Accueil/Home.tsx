@@ -1,4 +1,6 @@
-function Home(_props: any) {
+import React from 'react';
+
+function Home() {
   const handleSubmit = async (event: any) => {
     event.preventDefault();
     const form = new FormData(event.currentTarget);
@@ -40,25 +42,25 @@ function Home(_props: any) {
             <div className="mb-4">
               <label className="block text-gray-700 text-sm font-bold mb-2">
                 Job title &#128377;
+                <input
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md mb-3 focus:outline-none focus:border-indigo-500"
+                  type="text"
+                  placeholder="e.g : Backend developer"
+                  name="job_title"
+                  required
+                />
               </label>
-              <input
-                className="w-full px-3 py-2 border border-gray-300 rounded-md mb-3 focus:outline-none focus:border-indigo-500"
-                type="text"
-                placeholder="e.g : Backend developer"
-                name="job_title"
-                required
-              />
 
               <label className="block text-gray-700 text-sm font-bold mb-2">
                 Company name &#127970;
+                <input
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md mb-3 focus:outline-none focus:border-indigo-500"
+                  type="text"
+                  placeholder="e.g : Google"
+                  name="company"
+                  required
+                />
               </label>
-              <input
-                className="w-full px-3 py-2 border border-gray-300 rounded-md mb-3 focus:outline-none focus:border-indigo-500"
-                type="text"
-                placeholder="e.g : Google"
-                name="company"
-                required
-              />
 
               <label className="block text-gray-700 text-sm font-bold mb-2">
                 Annual Salary 	&#129297;
