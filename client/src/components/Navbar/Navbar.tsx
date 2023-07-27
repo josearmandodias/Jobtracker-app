@@ -1,7 +1,7 @@
 function Home(_props: any) {
 
   return (
-    <div className="main min-h-screen items-center justify-center bg-white">
+    <div className="main items-center justify-center bg-white">
       <div className="flex-row justify-between items-center">
         <div className="navbar shadow max-h-screen">
           <div className="h-16 mx-auto px-5 flex items-center justify-between">
@@ -11,14 +11,6 @@ function Home(_props: any) {
                 <li><a href="/my-applications" className="text-blue-500 font-mono hover:text-blue-800 transition-colors">My applications</a></li>
                 <li><a href="/profile" className="text-blue-500 font-mono hover:text-blue-800 transition-colors">Profil</a></li>
               </ul>
-          </div>
-        </div>
-
-        <div className="container mx-auto py-8">
-          <h1 className="text-2xl font-bold mb-6 text-left">Your applications &#129412;</h1>
-
-          <div className="w-full">
-            
           </div>
         </div>
       </div>
