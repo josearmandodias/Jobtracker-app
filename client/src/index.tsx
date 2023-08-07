@@ -6,7 +6,7 @@ import {
   createRoutesFromElements,
 } from 'react-router-dom';
 import ReactDOM from 'react-dom/client';
-import App from './App';
+import App from './components/App/App';
 import Home from './components/Accueil/Home';
 import LoginForm from './components/LoginForm/LoginForm';
 import Signup from './components/Auth/Signup';
